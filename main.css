@@ -1,0 +1,120 @@
+/*импорт стилей текста*/
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+/*описание размеров страницы*/
+body,html {
+  width: 100%;
+  height: 100%;
+  background-color: #d1d3e2;
+}
+/*стили body*/
+body {
+  color: #3f4049;
+  font-family: 'Hamlet', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Шапка сайта */
+header{ 
+  width: 100%;
+  padding: 10px 0.5% 0px 0.5%;
+  background: transparent;
+  float: left;
+  position: fixed;
+}
+
+header #logo {
+  color: #f0e2e2;
+  font-size: 1.6em;
+  margin: 0px 80px;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+/*положение в шапке*/
+#logo {
+  float: left;
+  width: 30%;
+  font-size: 1.1em;
+}
+
+/*поля сайта*/
+#main {
+background-color: rgb(74, 78, 117);
+height: 453px;
+  background-image: url(https://www.lovelymockups.com/wp-content/uploads/2017/01/mackbook-on-table.jpg);
+  background-blend-mode: multiply;
+    background-color: #8b9ead;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 150px 0;
+    width: 100%;
+    /*текст*/
+    color: #fff;
+    text-align: center;
+  }
+
+#aboutMe {
+  background-color: rgb(239, 239, 247);
+  height: 770px;
+  width: 100%;
+}
+/*поле для бэкграунда фото*/
+.backFoto{
+  background-color: rgb(165, 96, 165);
+  height: 50px;
+  width: 50px;
+  margin-top: 50px;
+}
+/*поле с фото */
+img.fotoMe {
+  width: 200px;
+  height: 200px;
+  margin-top: 250px;
+  margin-left: 500px;
+}
+/*Текст обо мне*/
+div.aboutMain {
+  margin-left: 750px;
+  margin-top: -170px;
+}
+/*поле о скиллах*/
+#softHard{
+  background-color: rgb(111, 113, 124);
+  height: 500px;
+  width: 100%;
+}
+/*поле о контактах*/
+#contacts{
+  background-color: rgb(61, 55, 4);
+  height: 1000px;
+  width: 100%;
+}
+/*шапка с лого и навигацией без перемещения*/
+#logo > a {
+  text-decoration: none;
+  color: #1a121a;
+}
+
+#navigate > a {
+  color: rgb(219, 210, 210);
+  text-decoration: none;
+  margin-right: 7%;
+}
+
+/*Шапка при перемещении*/
+.fixed {
+  z-index: 5000;
+  background-color: #fff;
+  border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+  color: #f5f5f5;
+}
+
+.fixed #navigate a {color: #343434}
+.fixed #navigate a:hover {color: #7c7c7c}
+

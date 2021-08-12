@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сайт визитка</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- шапка сайта -->
+  <header>
+    <div id="logo">
+      <a href="#main" onclick="slowScroll('#main')" title="логотип"> AlexFom</a>
+    </div>
+    <div id="navigate">
+      <a href="#aboutMe" onclick="slowScroll('#aboutMe')" title="Обо мне">Обо мне</a>
+      <a href="#softHard" onclick="slowScroll('#softHard')" title="Soft и Hard скиллы">Soft и Hard
+        скиллы</a>
+      <a href="#contacts" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+    </div>
+    <!--анимация перемещения при помощи библиотеки jqaery-->
+    <script>
+      function slowScroll(id) {
+        $("html, body").animate({
+          scrollTop: $(id).offset().top
+        }, 800);
+      }
+      $(document).on("scroll", function () {
+        if ($(window).scrollTop() === 0)
+          $("header").removeClass("fixed");
+        else
+          $("header").attr("class", "fixed");
+      });
+    </script>
+  </header>
+  <!--текст главного блока-->
+  <div id="main">
+    <p class="">Заголовок текста</p>
+    <span class="ots">Текст такой не плохой
+      <br>красивый понятный молодой
+    </span>
+  </div>
+  <!--текст блока обо мне-->
+  <div id="aboutMe">
+    <div class="backFoto">бэкфото</div>
+    <img class="fotoMe" src="man.png" alt="фото">
+
+    <div class="aboutMain">
+      <h1>Заголовок текста</h1>
+      <span>Текст такой не плохой
+        <br>красивый понятный молодой
+      </span>
+    </div>
+  </div>
+
+  <!--текст блока о скиллах-->
+  <div id="softHard">
+    <p>Сфпфпфп</p>
+  </div>
+  <!--текст блока обо мне-->
+  <div id="contacts">
+    <p>Сфпфпфп</p>
+  </div>
+
+
+</body>
+
+</html>
